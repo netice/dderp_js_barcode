@@ -5,10 +5,10 @@
     'summary': '广州导道DDERP js 条码',
     'category': 'erp',
     'description':
-    'website': 'http://www.designdock.cn',
         """
  广州导道DDERP js 条码
         """,
+    'website': 'http://www.designdock.cn',
     'data': [
         'js_barcode.xml',
     ],
