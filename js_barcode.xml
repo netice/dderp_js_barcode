@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!--
+        <template id="dderp_js_barcode_assets" name="widgets_js_barcode_assets" inherit_id="website.assets_frontend">
+        -->
+        <!--
+        网页界面JS条码支持
+        -->
+        <template id="dderp_js_barcode_assets" name="widgets_js_barcode_assets" inherit_id="web.assets_common">
+            <xpath expr="." position="inside">
+                <!--
+                <link rel="stylesheet" href="/dderp_js_barcode/static/src/css/widgets_geo_baidu.css"/>
+                -->
+                <script type="text/javascript" src="/dderp_js_barcode/static/lib/jquery/jquery-barcode.min.js"/>
+                <script type="text/javascript" src="/dderp_js_barcode/static/src/js/js_barcode.js"/>
+
+            </xpath>
+        </template>
+        
+        <!--
+        PDF报表JS条码支持
+        -->
+        <template id="dderp_js_barcode_assets_minimal" name="widgets_js_barcode_assets_minimal"
+            inherit_id="report.minimal_layout">
+            <xpath expr="//head" position="inside">
+                <!--
+                <link rel="stylesheet" href="/dderp_js_barcode/static/src/css/widgets_geo_baidu.css"/>
+                -->
+                <script type="text/javascript" src="/web/static/lib/jquery/jquery.js"/>
+                <script type="text/javascript" src="/dderp_js_barcode/static/lib/jquery/jquery-barcode.min.js"/>
+                <script type="text/javascript" src="/dderp_js_barcode/static/src/js/js_barcode.js"/>
+
+            </xpath>
+        </template>
+
+    </data>
+</openerp>
